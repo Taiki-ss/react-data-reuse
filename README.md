@@ -1,0 +1,2 @@
+# react-data-reuse
+ReactのuseContextでAPIを叩いて各ページで取得したデータを使いまわす実装
