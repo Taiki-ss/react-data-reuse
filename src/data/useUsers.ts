@@ -8,8 +8,8 @@ interface User {
 
 const fetcher: (url: string) => Promise<User[]> = async (url: string) => await axios.get(url).then((res) => res.data)
 
-const UsersData: () => SWRResponse<User[], Error> = () => {
+const useUsersData: () => SWRResponse<User[], Error> = () => {
   return useSWR<User[], Error>('https://jsonplaceholder.typicode.com/users', fetcher)
 }
 
-export default UsersData
+export default useUsersData

@@ -1,10 +1,10 @@
 import React from 'react'
-import UsersData from '../data/useUsers'
+import useUsersData from '../data/useUsers'
 
 const List: React.FC = () => {
-  const { data, error } = UsersData()
-  if (error !== undefined) console.log(error)
-  if (data === undefined) return <h1>Loading</h1>
+  const { data, error } = useUsersData()
+  if (error !== undefined) return <p>error</p>
+  if (data === undefined) return <p>Loading</p>
   return (
     <ul>
       {data.map((user: { id: string, name: string }) => (
