@@ -1,16 +1,15 @@
-import React from "react";
-import Navi from "../components/Navi";
-import usersData from "../data/users";
+import React from 'react'
+import Navi from '../components/Navi'
+import List from '../components/List'
 
 const Users: React.FC = () => {
-  const data = usersData();
-  console.log(data);
   return (
     <div>
       <Navi />
       <h1>Users</h1>
+      <List />
     </div>
-  );
-};
+  )
+}
 
-export default Users;
+export default Users
