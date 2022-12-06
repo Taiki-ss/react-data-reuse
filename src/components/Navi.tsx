@@ -12,7 +12,7 @@ const Navi: React.FC = () => {
           <Link to={'/about'}>About</Link>
         </li>
         <li>
-          <Link to={'/users'}>Users</Link>
+          <Link to={'/faq'}>faq</Link>
         </li>
       </ul>
     </nav>
